@@ -1416,15 +1416,14 @@ Spacemacs uses the =evil= integration of [[https://github.com/abo-abo/avy][avy]]
 invocation of =avy= during motions.
 
 For instance, it is useful for deleting a set of visual lines from the current line.
-Try the following sequence in a buffer containing some text: ~d SPC j l~, followed by
+Try the following sequence in a buffer containing some text: ~d SPC y~, followed by
 selecting an avy candidate.
 
 | Key Binding | Description                                        |
 |-------------+----------------------------------------------------|
-| ~SPC j j~   | initiate avy jump char                             |
-| ~SPC j w~   | initiate avy jump word                             |
-| ~SPC j l~   | initiate avy jump line                             |
-| ~SPC j u~   | go back to the previous location (before the jump) |
+| ~SPC SPC~   | initiate avy jump word                             |
+| ~SPC y~     | initiate avy jump line                             |
+| ~SPC `~     | go back to the previous location (before the jump) |
 
 **** ace-link mode
 Similar to =avy=, [[https://github.com/abo-abo/ace-link][ace-link]] allows one to jump to any link in
